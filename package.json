@@ -1,0 +1,20 @@
+{
+  "name": "wc-google-map",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/codearryaas/wc-google-map.git",
+  "author": "kodeninja <codearryaas@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@wordpress/scripts": "^26.12.0",
+    "concurrently": "^8.2.1"
+  },
+  "scripts": {
+    "dev:blocks": "wp-scripts start --webpack-copy-php --webpack-src-dir=src/blocks --output-path=dist/blocks",
+    "build:blocks": "wp-scripts build --webpack-copy-php --webpack-src-dir=src/blocks --output-path=dist/blocks",
+    "dev:non-blocks": "wp-scripts start --webpack-copy-php --config ./webpack-config.js",
+    "build:non-blocks": "wp-scripts build --webpack-copy-php --config ./webpack-config.js",
+    "dev": "concurrently \"yarn dev:blocks\" \"yarn dev:non-blocks\"",
+    "build": "concurrently \"yarn dev:blocks\" \"yarn dev:non-blocks\""
+  }
+}

@@ -1,0 +1,39 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "wc-google-map/google-map",
+	"title": "Google Map",
+	"description": "A simple block to disply Google Map.",
+	"textdomain": "wc-google-map",
+	"icon": "location-alt",
+	"category": "layout",
+	"attributes": {
+		"address": {
+			"type": "string",
+			"default": "Bhaktapur Durbar Square"
+		},
+		"language": {
+			"type": "string",
+			"default": "en"
+		},
+		"zoom": {
+			"type": "number",
+			"default": 13
+		},
+		"height": {
+			"type": "number",
+			"default": 600
+		}
+	},
+	"example": {
+		"attributes": {
+			"address": "Bhaktapur Durbar square"
+		}
+	},
+	"supports": {
+		"align": ["full", "wide"]
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
