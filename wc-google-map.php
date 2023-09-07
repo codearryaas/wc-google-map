@@ -78,7 +78,7 @@ function wc_google_map_get_settings() {
 		'enableGoogleMapBlock' => true
 	);
 
-	$settings = get_option( 'ws_google_map_settings', $default );
+	$settings = get_option( 'ws_google_map_settings' );
 
 	return wp_parse_args( $settings, $default_values );
 } 

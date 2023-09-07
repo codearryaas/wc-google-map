@@ -15,6 +15,6 @@
     "dev:non-blocks": "wp-scripts start --webpack-copy-php --config ./webpack-config.js",
     "build:non-blocks": "wp-scripts build --webpack-copy-php --config ./webpack-config.js",
     "dev": "concurrently \"yarn dev:blocks\" \"yarn dev:non-blocks\"",
-    "build": "concurrently \"yarn dev:blocks\" \"yarn dev:non-blocks\""
+    "build": "concurrently \"yarn build:blocks\" \"yarn build:non-blocks\""
   }
 }
