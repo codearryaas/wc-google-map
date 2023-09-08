@@ -4,7 +4,7 @@
  * Description: A simple Google Map plugin for showcasing blocks and settings page. This plugin was created for #WCKTM2023 to teach about block and settings page development.
  * Author: Rakesh Lawaju
  * Author URI: https://www.racase.com.np
- * Plugin URI: https://www.racase.com.np
+ * Plugin URI: https://www.racase.com.np/plugins/wc-google-map
  * Version: 1.0.0
  * Text Domain: wc-google-map
  * Domain Path: /languages
