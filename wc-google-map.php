@@ -5,7 +5,7 @@
  * Author: Rakesh Lawaju
  * Author URI: https://www.racase.com.np
  * Plugin URI: https://www.racase.com.np
- * Version: 1.3.8
+ * Version: 1.0.0
  * Text Domain: wc-google-map
  * Domain Path: /languages
  * Tested up to: 6.3
@@ -78,7 +78,7 @@ function wc_google_map_get_settings() {
 		'enableGoogleMapBlock' => true
 	);
 
-	$settings = get_option( 'ws_google_map_settings' );
+	$settings = get_option( 'wc_google_map_settings' );
 
 	return wp_parse_args( $settings, $default_values );
 } 
@@ -95,7 +95,7 @@ function wc_google_map_api_update_settings() {
 	$settings['enableGoogleMapBlock'] = isset( $data['enableGoogleMapBlock'] ) && true === $data['enableGoogleMapBlock'];
 
 	if ( ! empty( $settings ) ) {
-		update_option( 'ws_google_map_settings', $settings );
+		update_option( 'wc_google_map_settings', $settings );
 	}
 
 	wp_send_json( $settings );
